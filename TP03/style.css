@@ -1,0 +1,110 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a[href] {
+    color: lightgreen;
+}
+
+a[href]:visited {
+    color: darkgreen;
+}
+
+a[href]:hover {
+    color: orange;
+}
+
+section:first-of-type {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5wZmNilWTbJBsOmoAFABbZVCnVbAuPalkw&s');
+    background-repeat: repeat;
+}
+
+h1::after,
+h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    margin-top: 10px;
+}
+.etude table {
+    border-collapse: collapse;
+    width: 100%;
+    caption-side: bottom;
+    font-weight: bold;
+}
+
+.etude thead {
+    text-align: center;
+    vertical-align: middle;
+    height: 2.4em;
+}
+
+.etude tbody th:first-child {
+    vertical-align: top;
+}
+
+.etude tbody th {
+    text-align: left;
+    padding: 0.5em;
+}
+
+.etude tbody td {
+    padding: 0.5em;
+    text-align: center;
+    min-width: 10em;
+}
+
+.etude tfoot {
+    background-color: lightgray;
+}
+
+.etude tfoot td {
+    text-align: right;
+    padding: 0.5em;
+}
+
+.etude tfoot td:first-child {
+    text-align: left;
+}
+.etude tbody td:empty {
+    border: none;
+}
+
+.etude tbody tr:first-child td:empty {
+    border-left: none;
+}
+
+.etude thead th:not(:empty),
+.etude tbody th:not(:empty) {
+    border-radius: 0.5em;
+    background-color: rgb(79, 129, 189);
+    color: white;
+    border: 2px outset rgb(59, 97, 142);
+    box-shadow: 1px 1px black;
+}
+
+.etude tbody tr:nth-child(2) td:not(:empty) {
+    border-radius: 0.5em;
+    border: 2px outset rgb(94, 73, 121);
+    background-color: rgb(128, 100, 162);
+    box-shadow: 1px 1px black;
+    color: white;
+}
+
+.etude tbody tr:nth-child(5) td:not(:empty) {
+    border-radius: 0.5em;
+    border: 2px outset rgb(147, 178, 84);
+    background-color: rgb(155, 187, 89);
+    box-shadow: 1px 1px black;
+    color: white;
+}
+
+.etude tbody tr:nth-child(n+7) td:not(:empty) {
+    border-radius: 0.5em;
+    border: 2px outset rgb(59, 97, 142);
+    background-color: rgb(59, 129, 189);
+    box-shadow: 1px 1px 1 black;
+    color: white;
+}
