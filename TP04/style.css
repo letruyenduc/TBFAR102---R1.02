@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    font-family: 'Tangerine',sans-serif;
+    font-size: 30px;
+
+}
+body h1{
+    color:white;
+}
+figure img{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    filter: grayscale(100%);
+}
+figure{
+    background-color: white;
+    width: 270px;
+    height: 330px;
+    display: inline-block;
+}
+
+figcaption{
+    text-indent: 20px;
+}
+
+figure{
+    /* -webkit-box-shadow: 20px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 0px 20px 0px rgba(0,0,0,0.75); */
+    box-shadow: 20px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+figure:nth-child(even){
+    /* -moz-transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -o-transform:rotate(10deg); */
+    transform:rotate(10deg);
+}
+figure:nth-child(3n){
+    /* -moz-transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg); */
+    transform:rotate(-10deg);
+}
+figure:nth-child(5n){
+    /* -moz-transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -o-transform:rotate(10deg); */
+    transform:rotate(10deg);
+}
+
+figure:hover{
+    transform: scale(1.3);
+    transition: transform 1s linear;
+}
+
