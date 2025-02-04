@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function changeTitle() {
+            let newTitle = prompt("Quel est le nouveau titre ?");
+            if (newTitle != null) {
+                document.querySelector('h1').innerText = newTitle;
+            }
+        }
+    </script>
+    <title>TP06</title>
+</head>
+
+<body>
+    <section>
+        <h1>
+            Essais JavaScript
+        </h1>
+        <button onclick='alert("Hello world")'>
+            Hello, world !
+        </button>
+        <button onclick='changeTitle()'>
+            Changer le titre
+        </button>
+    </section>
+</body>
+
+</html>
